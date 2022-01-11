@@ -52,20 +52,4 @@ RSpec.describe "Iteration 2" do
     expect(@event.supply_list).to eq(["fabric", "scissors", "thread", "sewing_needles", "yarn", "knitting_needles"])
   end
 
-  xit "builds if a person has the supplies for a craft" do
-    @hector.can_build?(@sewing)
-    expect(@hector.can_build?(@sewing)).to be_instance_of Boolean
-    expect(@hector.can_build?(@sewing)).to eq(false)
-
-    @hector.add_supply('fabric', 7)
-    @hector.add_supply('thread', 1)
-    @hector.can_build?(@sewing)
-    expect(@hector.can_build?(@sewing)).to eq(false)
-
-    @hector.add_supply('scissors', 1)
-    @hector.add_supply('sewing_needles', 1)
-    @hector.can_build?(@sewing)
-    expect(@hector.can_build?(@sewing)).to eq(true)
-  end
-
 end
