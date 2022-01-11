@@ -38,21 +38,21 @@ RSpec.describe "Iteration 2" do
     @event = Event.new("Carla's Craft Connection", [@sewing, @knitting], [@hector, @toni])
   end
 
-  it "has new attendees" do
+  it "returns attendee names" do
     expect(@event.attendee_names).to eq(["Hector", "Toni"])
   end
 
-  it "returns craft with most supplies" do
+  xit "returns craft with most supplies" do
     expect(@event.craft_with_most_supplies).to be_instance_of Array
     expect(@event.craft_with_most_supplies).to eq("sewing")
   end
 
-  it "returns supply list" do
+  xit "returns supply list" do
     expect(@event.supply_list).to be_instance_of Array
     expect(@event.supply_list).to eq(["fabric", "scissors", "thread", "sewing_needles", "yarn", "knitting_needles"])
   end
 
-  it "builds if a person has the supplies for a craft" do
+  xit "builds if a person has the supplies for a craft" do
     @hector.can_build?(@sewing)
     expect(@hector.can_build?(@sewing)).to be_instance_of Boolean
     expect(@hector.can_build?(@sewing)).to eq(false)
