@@ -42,12 +42,12 @@ RSpec.describe "Iteration 2" do
     expect(@event.attendee_names).to eq(["Hector", "Toni"])
   end
 
-  xit "returns craft with most supplies" do
-    expect(@event.craft_with_most_supplies).to be_instance_of Array
+  it "returns craft with most supplies" do
+    expect(@event.craft_with_most_supplies).to be_instance_of String
     expect(@event.craft_with_most_supplies).to eq("sewing")
   end
 
-  xit "returns supply list" do
+  it "returns supply list" do
     expect(@event.supply_list).to be_instance_of Array
     expect(@event.supply_list).to eq(["fabric", "scissors", "thread", "sewing_needles", "yarn", "knitting_needles"])
   end
