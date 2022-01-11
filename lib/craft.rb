@@ -6,5 +6,4 @@ attr_reader :name,
     @name              = name
     @supplies_required = supplies_required
   end
-
 end
