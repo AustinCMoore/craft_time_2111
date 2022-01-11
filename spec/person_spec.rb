@@ -1,6 +1,6 @@
 require './lib/person'
 require './lib/craft'
-
+require './lib/event'
 
 RSpec.describe Person do
   before (:each) do
