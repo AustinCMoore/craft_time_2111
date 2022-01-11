@@ -1,4 +1,6 @@
 require './lib/person'
+require './lib/craft'
+
 
 RSpec.describe Person do
   before (:each) do
